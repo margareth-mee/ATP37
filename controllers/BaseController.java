@@ -2,7 +2,7 @@ package controllers;
 
 import java.util.ArrayList;
 
-public class BaseController<T>{
+abstract class BaseController<T>{
     ArrayList<T> lista;
 
     public BaseController(){
@@ -25,7 +25,7 @@ public class BaseController<T>{
         }
     }
 
-    void delete(T obj){
+    public void delete(T obj){
         lista.remove(obj);
     }
 }
