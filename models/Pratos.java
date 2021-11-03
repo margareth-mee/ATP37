@@ -1,6 +1,6 @@
 package models;
 
-public class Pratos{
+public class Pratos extends Base{
     public String material;
     public String marca;
 
